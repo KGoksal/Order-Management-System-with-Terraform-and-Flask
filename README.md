@@ -1,3 +1,7 @@
+# Order Management System Webserver with Terraform and Flask
+
+This project demonstrates a simple Order Management System using Terraform for infrastructure provisioning, Flask for backend API development, and HTML for frontend presentation.
+
 # Flask Application (order-table.py)
 
 The Flask application (order-table.py) provides a backend API to manage orders:
@@ -28,7 +32,6 @@ Getting Started
 Before running the project, ensure you have:
 AWS Account: Configure AWS credentials with sufficient permissions for Terraform.
 Python 3: Install necessary Python packages using pip install -r requirements.txt.
-
 
 # Terraform Infrastructure Deployment Overview
 

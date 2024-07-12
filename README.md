@@ -93,3 +93,7 @@ This project leverages Terraform to provision and manage essential infrastructur
 ## SUMMARY
 
 Using Terraform, we successfully deployed an Order Management System (OMS) infrastructure on AWS. This setup included a Virtual Private Cloud (VPC) with public and private subnets across multiple Availability Zones, ensuring high availability and secure networking. We provisioned an Application Load Balancer (ALB) to distribute HTTP traffic to Flask-based EC2 instances hosting the OMS application. Additionally, a MySQL RDS instance was deployed to securely store order data. Security groups were configured to control traffic, and IAM roles were defined for secure access management. If Route 53 is not available, the web server can be accessed via the ALB's DNS name, providing reliable and scalable access to the application.
+
+![Security-Groups](https://github.com/user-attachments/assets/5afa4632-9347-4be0-9d4b-1dbcc82b1669)
+<img width="818" alt="Screenshot 2024-07-11 at 4 15 42 PM" src="https://github.com/user-attachments/assets/d8547d0e-5891-4b18-a1d3-ecb77b28eb92">
+

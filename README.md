@@ -89,6 +89,8 @@ Outputs
 Website URL: Provides the URL to access the application via Route 53 or ALB DNS name.
 Database Address and Endpoint: Offers connectivity details for accessing the MySQL database.
 
-Using Terraform, we successfully deployed an Order Management System (OMS) infrastructure on AWS. This setup included a Virtual Private Cloud (VPC) with public and private subnets across multiple Availability Zones, ensuring high availability and secure networking. We provisioned an Application Load Balancer (ALB) to distribute HTTP traffic to Flask-based EC2 instances, hosting the OMS application. Additionally, a MySQL RDS instance was deployed to securely store order data. The deployment process involved configuring security groups, IAM roles, and ensuring proper connectivity via Route 53 for DNS resolution. This infrastructure setup enables efficient order tracking and management while adhering to best practices in security and scalability.
+# SUMMARY 
+
+Using Terraform, we successfully deployed an Order Management System (OMS) infrastructure on AWS. This setup included a Virtual Private Cloud (VPC) with public and private subnets across multiple Availability Zones, ensuring high availability and secure networking. We provisioned an Application Load Balancer (ALB) to distribute HTTP traffic to Flask-based EC2 instances hosting the OMS application. Additionally, a MySQL RDS instance was deployed to securely store order data. Security groups were configured to control traffic, and IAM roles were defined for secure access management. If Route 53 is not available, the web server can be accessed via the ALB's DNS name, providing reliable and scalable access to the application.
 
 <img width="818" alt="Screenshot 2024-07-11 at 4 15 42 PM" src="https://github.com/user-attachments/assets/38b05dc3-0bee-44f5-900c-2ff3a770da76">

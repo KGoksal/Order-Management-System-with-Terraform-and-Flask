@@ -15,7 +15,6 @@ Connects to an RDS MySQL database (`order_table`) to store order information.
 - `/add_order`: Accepts form submissions to add new orders to the database.
 
 ### Key Functionalities
-
 - **Initialization of Database**: Automatically creates the `orders` table if it doesn't exist.
 - **Functions**:
   - `get_orders()`: Retrieves all orders from the database.

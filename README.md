@@ -30,7 +30,6 @@ The HTML file (`index.html`) provides a user interface to interact with the Flas
 For detailed HTML code, refer to `index.html`.
 
 ## Getting Started
-
 ### Prerequisites
 
 Before running the project, ensure you have:

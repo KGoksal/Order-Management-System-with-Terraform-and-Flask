@@ -24,7 +24,6 @@ For detailed Flask application code, refer to `order-table.py`.
 The HTML file (`index.html`) provides a user interface to interact with the Flask application:
 
 ### Features
-
 - **Displays Orders**: Shows existing orders in a table format.
 - **Adds New Orders**: Contains a form to input customer name, status, progress, order date, and country.
 

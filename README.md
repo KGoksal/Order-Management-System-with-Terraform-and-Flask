@@ -37,7 +37,6 @@ Before running the project, ensure you have:
 - **Python 3**: Install necessary Python packages using `pip install -r requirements.txt`.
 
 ## Terraform Infrastructure Deployment Overview
-
 This project leverages Terraform to provision and manage essential infrastructure components on AWS for an Order Management System. Here's an overview of what is configured and deployed through the Terraform files (`main.tf`):
 
 ### AWS Resources Deployed

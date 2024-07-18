@@ -6,7 +6,6 @@ This project showcases a straightforward Order Management System using Terraform
 The Flask application (`order-table.py`) serves as the backend API to manage orders:
 
 ### MySQL Configuration
-
 Connects to an RDS MySQL database (`order_table`) to store order information.
 
 ### Routes

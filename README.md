@@ -41,7 +41,6 @@ Before running the project, ensure you have:
 This project leverages Terraform to provision and manage essential infrastructure components on AWS for an Order Management System. Here's an overview of what is configured and deployed through the Terraform files (`main.tf`):
 
 ### AWS Resources Deployed
-
 1. **Virtual Private Cloud (VPC)**
    - **Purpose**: Provides an isolated network environment for application resources.
    - **Components**:
@@ -83,7 +82,6 @@ This project leverages Terraform to provision and manage essential infrastructur
 - **Database Address and Endpoint**: Offers connectivity details for accessing the MySQL database.
 
 ## SUMMARY
-
 Using Terraform, we successfully deployed an Order Management System (OMS) infrastructure on AWS. This setup included a Virtual Private Cloud (VPC) with public and private subnets across multiple Availability Zones, ensuring high availability and secure networking. We provisioned an Application Load Balancer (ALB) to distribute HTTP traffic to Flask-based EC2 instances hosting the OMS application. Additionally, a MySQL RDS instance was deployed to securely store order data. Security groups were configured to control traffic, and IAM roles were defined for secure access management. If Route 53 is not available, the web server can be accessed via the ALB's DNS name, providing reliable and scalable access to the application.
 
 ![Security-Groups](https://github.com/user-attachments/assets/5afa4632-9347-4be0-9d4b-1dbcc82b1669)

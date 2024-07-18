@@ -17,7 +17,6 @@ Connects to an RDS MySQL database (`order_table`) to store order information.
 - **Functions**:
   - `get_orders()`: Retrieves all orders from the database.
   - `add_order()`: Inserts a new order into the database.
-
 For detailed Flask application code, refer to `order-table.py`.
 
 ## HTML Frontend (`index.html`)

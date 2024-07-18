@@ -79,7 +79,6 @@ This project leverages Terraform to provision and manage essential infrastructur
      - Security Group: Ensures instances have appropriate network access.
 
 ### Outputs
-
 - **Website URL**: Provides the URL to access the application via Route 53 or ALB DNS name.
 - **Database Address and Endpoint**: Offers connectivity details for accessing the MySQL database.
 

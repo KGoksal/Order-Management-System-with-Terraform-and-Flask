@@ -20,7 +20,6 @@ Connects to an RDS MySQL database (`order_table`) to store order information.
 For detailed Flask application code, refer to `order-table.py`.
 
 ## HTML Frontend (`index.html`)
-
 The HTML file (`index.html`) provides a user interface to interact with the Flask application:
 
 ### Features

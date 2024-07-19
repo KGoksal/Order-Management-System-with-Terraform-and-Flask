@@ -25,7 +25,6 @@ The HTML file (`index.html`) provides a user interface to interact with the Flas
 ### Features
 - **Displays Orders**: Shows existing orders in a table format.
 - **Adds New Orders**: Contains a form to input customer name, status, progress, order date, and country.
-
 For detailed HTML code, refer to `index.html`.
 
 ## Getting Started

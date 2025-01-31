@@ -94,11 +94,11 @@ resource "aws_db_instance" "db-server" {
   db_name                     = "order_table"                   # Default database name
   engine                      = "mysql"                         # Database engine (MySQL)
   engine_version              = "8.0"                           # MySQL version
-  username                    = "admin"                         # Master username for database access
-  password                    = "password#"                      # Master password for database access
-  monitoring_interval         = 0                               # Monitoring interval in seconds (0 means no monitoring)
-  multi_az                    = false                           # Disable Multi-AZ deployment
-  port                        = 3306                            # Database port
+  username                    = "admin"                         
+  password                    = "password#"                      
+  monitoring_interval         = 0                               # Monitoring interval in seconds (0 = no monitoring)
+  multi_az                    = false                           # Multi-AZ deployment
+  port                        = 3306                            
   publicly_accessible         = false                           # Disable public accessibility
   skip_final_snapshot         = true                            # Skip final DB snapshot on instance termination
 }

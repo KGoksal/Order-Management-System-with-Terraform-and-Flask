@@ -8,10 +8,10 @@ The Flask application (`order-table.py`) serves as the backend API to manage ord
 ### MySQL Configuration
 Connects to an RDS MySQL database (`order_table`) to store order information.
 
-### Routes
-- `/`: Displays existing orders in a tabular format. 
+### Routes  
+- `/`: Displays existing orders in a tabular format.  
 - `/add_order`: Accepts form submissions to add new orders to the database. 
-
+ 
 ### Key Functionalities
 - **Initialization of Database**: Automatically creates the `orders` table if it doesn't exist. 
 - **Functions**:  

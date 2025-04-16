@@ -29,7 +29,7 @@ resource "aws_alb" "app-lb" {
 # Define ALB listener to listen on HTTP port 80 and forward traffic to target group
 resource "aws_alb_listener" "app-listener" {
   load_balancer_arn = aws_alb.app-lb.arn  # ARN of the ALB
-  port              = 80                  # HTTP port
+  port              = 80                  
   protocol          = "HTTP"
   
   # Default action: forward HTTP traffic to the defined target group 

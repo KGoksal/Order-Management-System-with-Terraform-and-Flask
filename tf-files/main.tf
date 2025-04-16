@@ -1,4 +1,4 @@
-# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
+
 # Define Application Load Balancer target group for order-table application instances
 resource "aws_alb_target_group" "app-lb-tg" { 
   name        = "order-table-lb-tg" 
@@ -14,7 +14,7 @@ resource "aws_alb_target_group" "app-lb-tg" {
   }
 }
 
-# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb
+
 # Define Application Load Balancer (ALB) for order-table application
 resource "aws_alb" "app-lb" {
   name               = "order-table-lb-tf"
@@ -39,7 +39,7 @@ resource "aws_alb_listener" "app-listener" {
   }
 }
 
-# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_template
+
 # https://developer.hashicorp.com/terraform/language/functions/templatefile
 # Define launch template for Auto Scaling Group (ASG) configuration
 resource "aws_launch_template" "asg-lt" {

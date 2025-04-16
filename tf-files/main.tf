@@ -84,8 +84,8 @@ resource "aws_autoscaling_group" "app-asg" {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance
 # Define RDS database instance for the order-table application
 resource "aws_db_instance" "db-server" {
-  instance_class              = "db.t3.micro"                   # Instance type for the RDS instance
-  allocated_storage           = 20                              # Allocated storage in GB
+  instance_class              = "db.t3.micro"                   
+  allocated_storage           = 20                              
   vpc_security_group_ids      = [aws_security_group.db-sg.id]   # Security group for the RDS instance
   allow_major_version_upgrade = false                           # Disallow major version upgrades
   auto_minor_version_upgrade  = true                            # Allow minor version upgrades automatically

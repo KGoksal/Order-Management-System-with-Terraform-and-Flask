@@ -108,7 +108,7 @@ resource "aws_db_instance" "db-server" {
 # resource "aws_route53_record" "order-table" {
 #   zone_id = data.aws_route53_zone.selected.zone_id  
 #   name    = "order-table.${var.hosted-zone}"       
-#   type    = "A"                                     # Record type: A record
+#   type    = "A"                                     
 
   # # Alias record configuration pointing to the ALB
   # alias {

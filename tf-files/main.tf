@@ -72,12 +72,12 @@ resource "aws_autoscaling_group" "app-asg" {
   desired_capacity          = 1                                
   name                      = "order-table-asg"
   health_check_grace_period = 300                              
-  health_check_type         = "ELB"                            # Health check type: Elastic Load Balancer
-  target_group_arns         = [aws_alb_target_group.app-lb-tg.arn]  # Target group for the ASG
-  vpc_zone_identifier       = aws_alb.app-lb.subnets           # Subnets where instances will be launched
+  health_check_type         = "ELB"                            
+  target_group_arns         = [aws_alb_target_group.app-lb-tg.arn]  
+  vpc_zone_identifier       = aws_alb.app-lb.subnets           
   launch_template {
-    id      = aws_launch_template.asg-lt.id                    # ID of the launch template
-    version = aws_launch_template.asg-lt.latest_version        # Latest version of the launch template
+    id      = aws_launch_template.asg-lt.id                    
+    version = aws_launch_template.asg-lt.latest_version        
   }
 }
 

@@ -107,7 +107,7 @@ resource "aws_db_instance" "db-server" {
 # Define Route 53 DNS record for the order-table application
 # resource "aws_route53_record" "order-table" {
 #   zone_id = data.aws_route53_zone.selected.zone_id  
-#   name    = "order-table.${var.hosted-zone}"        # DNS name for the application
+#   name    = "order-table.${var.hosted-zone}"       
 #   type    = "A"                                     # Record type: A record
 
   # # Alias record configuration pointing to the ALB

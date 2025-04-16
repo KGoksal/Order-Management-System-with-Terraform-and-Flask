@@ -67,11 +67,11 @@ resource "aws_launch_template" "asg-lt" {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group
 # Define Auto Scaling Group (ASG) for managing EC2 instances
 resource "aws_autoscaling_group" "app-asg" {
-  max_size                  = 3                                # Maximum number of instances in the ASG
-  min_size                  = 1                                # Minimum number of instances in the ASG
-  desired_capacity          = 1                                # Initial desired capacity of instances
+  max_size                  = 3                                
+  min_size                  = 1                                
+  desired_capacity          = 1                                
   name                      = "order-table-asg"
-  health_check_grace_period = 300                              # Grace period for instance health checks
+  health_check_grace_period = 300                              
   health_check_type         = "ELB"                            # Health check type: Elastic Load Balancer
   target_group_arns         = [aws_alb_target_group.app-lb-tg.arn]  # Target group for the ASG
   vpc_zone_identifier       = aws_alb.app-lb.subnets           # Subnets where instances will be launched

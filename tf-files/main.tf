@@ -96,8 +96,8 @@ resource "aws_db_instance" "db-server" {
   engine_version              = "8.0"                           
   username                    = "admin"                         
   password                    = "password#"                      
-  monitoring_interval         = 0                               # Monitoring interval in seconds (0 = no monitoring)
-  multi_az                    = false                           # Multi-AZ deployment
+  monitoring_interval         = 0                               
+  multi_az                    = false                           
   port                        = 3306                            
   publicly_accessible         = false                           # Disable public accessibility
   skip_final_snapshot         = true                            # Skip final DB snapshot on instance termination

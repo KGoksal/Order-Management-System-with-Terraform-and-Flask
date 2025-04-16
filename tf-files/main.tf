@@ -106,7 +106,7 @@ resource "aws_db_instance" "db-server" {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record
 # Define Route 53 DNS record for the order-table application
 # resource "aws_route53_record" "order-table" {
-#   zone_id = data.aws_route53_zone.selected.zone_id  # Route 53 hosted zone ID where the record will be created
+#   zone_id = data.aws_route53_zone.selected.zone_id  
 #   name    = "order-table.${var.hosted-zone}"        # DNS name for the application
 #   type    = "A"                                     # Record type: A record
 

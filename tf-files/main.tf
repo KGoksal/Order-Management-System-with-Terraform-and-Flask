@@ -5,12 +5,12 @@ resource "aws_alb_target_group" "app-lb-tg" {
   port        = 80   
   protocol    = "HTTP" 
   vpc_id      = data.aws_vpc.selected.id  # VPC ID where the ALB and instances reside
-  target_type = "instance"  # Targets are EC2 instances
+  target_type = "instance"  
 
   # Configure health check settings for instances in the target group
   health_check {
-    healthy_threshold   = 2   # Number of consecutive successful health checks to consider instance healthy
-    unhealthy_threshold = 3   # Number of consecutive failed health checks to consider instance unhealthy
+    healthy_threshold   = 2   
+    unhealthy_threshold = 3   
   }
 }
 

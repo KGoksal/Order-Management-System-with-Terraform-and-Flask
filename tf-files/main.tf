@@ -100,7 +100,7 @@ resource "aws_db_instance" "db-server" {
   multi_az                    = false                           
   port                        = 3306                            
   publicly_accessible         = false                         
-  skip_final_snapshot         = true                            # Skip final DB snapshot on instance termination
+  skip_final_snapshot         = true                            
 }
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record

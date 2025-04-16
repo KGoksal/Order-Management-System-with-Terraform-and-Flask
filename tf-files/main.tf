@@ -89,11 +89,11 @@ resource "aws_db_instance" "db-server" {
   vpc_security_group_ids      = [aws_security_group.db-sg.id]   # Security group for the RDS instance
   allow_major_version_upgrade = false                           # Disallow major version upgrades
   auto_minor_version_upgrade  = true                            # Allow minor version upgrades automatically
-  backup_retention_period     = 0                               # Backup retention period in days (0 means no backup)
-  identifier                  = "order-table-app-db"            # Identifier for the RDS instance
-  db_name                     = "order_table"                   # Default database name
-  engine                      = "mysql"                         # Database engine (MySQL)
-  engine_version              = "8.0"                           # MySQL version
+  backup_retention_period     = 0                               
+  identifier                  = "order-table-app-db"            
+  db_name                     = "order_table"                   
+  engine                      = "mysql"                         
+  engine_version              = "8.0"                           
   username                    = "admin"                         
   password                    = "password#"                      
   monitoring_interval         = 0                               # Monitoring interval in seconds (0 = no monitoring)

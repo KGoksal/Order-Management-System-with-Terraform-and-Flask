@@ -21,7 +21,7 @@ resource "aws_alb" "app-lb" {
   ip_address_type    = "ipv4"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.alb-sg.id]  # Attach ALB security group for inbound traffic control
+  security_groups    = [aws_security_group.alb-sg.id]  
   subnets            = data.aws_subnets.ot-subnets.ids  # Subnets where ALB will distribute traffic
 }
 

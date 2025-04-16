@@ -28,7 +28,7 @@ resource "aws_alb" "app-lb" {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
 # Define ALB listener to listen on HTTP port 80 and forward traffic to target group
 resource "aws_alb_listener" "app-listener" {
-  load_balancer_arn = aws_alb.app-lb.arn  # ARN of the ALB
+  load_balancer_arn = aws_alb.app-lb.arn  
   port              = 80                  
   protocol          = "HTTP"
   

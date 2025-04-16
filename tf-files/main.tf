@@ -86,7 +86,7 @@ resource "aws_autoscaling_group" "app-asg" {
 resource "aws_db_instance" "db-server" {
   instance_class              = "db.t3.micro"                   
   allocated_storage           = 20                              
-  vpc_security_group_ids      = [aws_security_group.db-sg.id]   # Security group for the RDS instance
+  vpc_security_group_ids      = [aws_security_group.db-sg.id]   
   allow_major_version_upgrade = false                           # Disallow major version upgrades
   auto_minor_version_upgrade  = true                            # Allow minor version upgrades automatically
   backup_retention_period     = 0                               

@@ -113,7 +113,7 @@ resource "aws_db_instance" "db-server" {
   # # Alias record configuration pointing to the ALB
   # alias {
   #   name                   = aws_alb.app-lb.dns_name    
-  #   zone_id                = aws_alb.app-lb.zone_id     # Zone ID of the ALB
+  #   zone_id                = aws_alb.app-lb.zone_id     
   #   evaluate_target_health = true                       # Evaluate target health for the ALB
   # }
 

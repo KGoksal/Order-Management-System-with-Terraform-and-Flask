@@ -22,7 +22,7 @@ resource "aws_alb" "app-lb" {
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb-sg.id]  
-  subnets            = data.aws_subnets.ot-subnets.ids  # Subnets where ALB will distribute traffic
+  subnets            = data.aws_subnets.ot-subnets.ids  
 }
 
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener

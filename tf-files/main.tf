@@ -99,7 +99,7 @@ resource "aws_db_instance" "db-server" {
   monitoring_interval         = 0                               
   multi_az                    = false                           
   port                        = 3306                            
-  publicly_accessible         = false                           # Disable public accessibility
+  publicly_accessible         = false                         
   skip_final_snapshot         = true                            # Skip final DB snapshot on instance termination
 }
 

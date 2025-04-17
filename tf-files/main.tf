@@ -52,7 +52,7 @@ resource "aws_launch_template" "asg-lt" {
   user_data              = base64encode(templatefile("userdata.sh", {
     db-endpoint         = aws_db_instance.db-server.address, 
     user-data-git-token = var.git-token, 
-    user-data-git-name  = var.git-name    # Git username for cloning the application repository
+    user-data-git-name  = var.git-name    
   }))
   
   # Tag specification for instances launched by this template

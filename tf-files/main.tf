@@ -15,7 +15,7 @@ resource "aws_alb_target_group" "app-lb-tg" {
 }
 
 
-# Define Application Load Balancer (ALB) for order-table application
+# Define Application Load Balancer (ALB) for order-table application 
 resource "aws_alb" "app-lb" {
   name               = "order-table-lb-tf"
   ip_address_type    = "ipv4"

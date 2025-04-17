@@ -47,7 +47,7 @@ resource "aws_launch_template" "asg-lt" {
   image_id               = data.aws_ami.al2023.id  # AMI ID for the EC2 instances
   instance_type          = "t2.micro"
   key_name               = var.key-name
-  vpc_security_group_ids = [aws_security_group.server-sg.id]  # Security group for EC2 instances
+  vpc_security_group_ids = [aws_security_group.server-sg.id]  
   # Provide user data script to configure instances on launch
   user_data              = base64encode(templatefile("userdata.sh", {
     db-endpoint         = aws_db_instance.db-server.address,  # Database endpoint for the application

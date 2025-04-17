@@ -4,8 +4,8 @@ resource "aws_alb_target_group" "app-lb-tg" {
   name        = "order-table-lb-tg" 
   port        = 80    
   protocol    = "HTTP" 
-  vpc_id      = data.aws_vpc.selected.id  # VPC ID where the ALB and instances reside
-  target_type = "instance"  
+  vpc_id      = data.aws_vpc.selected.id  # VPC ID where the ALB and instances reside 
+  target_type = "instance"   
 
   # Configure health check settings for instances in the target group
   health_check {

@@ -51,7 +51,7 @@ resource "aws_launch_template" "asg-lt" {
   # Provide user data script to configure instances on launch
   user_data              = base64encode(templatefile("userdata.sh", {
     db-endpoint         = aws_db_instance.db-server.address, 
-    user-data-git-token = var.git-token,  # Git token for cloning the application repository
+    user-data-git-token = var.git-token, 
     user-data-git-name  = var.git-name    # Git username for cloning the application repository
   }))
   

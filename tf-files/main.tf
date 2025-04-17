@@ -50,7 +50,7 @@ resource "aws_launch_template" "asg-lt" {
   vpc_security_group_ids = [aws_security_group.server-sg.id]  
   # Provide user data script to configure instances on launch
   user_data              = base64encode(templatefile("userdata.sh", {
-    db-endpoint         = aws_db_instance.db-server.address,  # Database endpoint for the application
+    db-endpoint         = aws_db_instance.db-server.address, 
     user-data-git-token = var.git-token,  # Git token for cloning the application repository
     user-data-git-name  = var.git-name    # Git username for cloning the application repository
   }))

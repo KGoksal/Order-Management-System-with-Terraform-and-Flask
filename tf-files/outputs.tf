@@ -15,5 +15,5 @@ output "db-addr" {
 
 # Output the endpoint of the RDS database instance
 output "db-endpoint" {
-  value = aws_db_instance.db-server.endpoint  # Retrieve the endpoint of the RDS instance
+  value = aws_db_instance.db-server.endpoint  
 }

@@ -5,7 +5,7 @@
 
 # Output the DNS name of the Application Load Balancer (ALB)
 output "dns-name" {
-  value = "http://${aws_alb.app-lb.dns_name}"  # Construct the URL using ALB DNS name
+  value = "http://${aws_alb.app-lb.dns_name}"  
 }
 
 # Output the address of the RDS database instance

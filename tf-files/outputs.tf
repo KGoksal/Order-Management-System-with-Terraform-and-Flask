@@ -10,7 +10,7 @@ output "dns-name" {
 
 # Output the address of the RDS database instance
 output "db-addr" {
-  value = aws_db_instance.db-server.address  # Retrieve the address of the RDS instance
+  value = aws_db_instance.db-server.address  
 }
 
 # Output the endpoint of the RDS database instance

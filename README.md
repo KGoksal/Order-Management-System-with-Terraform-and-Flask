@@ -83,4 +83,3 @@ Using Terraform, we successfully deployed an Order Management System (OMS) infra
 
 ![Security-Groups](https://github.com/user-attachments/assets/5afa4632-9347-4be0-9d4b-1dbcc82b1669)
 <img width="818" alt="Screenshot 2024-07-11 at 4 15 42 PM" src="https://github.com/user-attachments/assets/d8547d0e-5891-4b18-a1d3-ecb77b28eb92">
-

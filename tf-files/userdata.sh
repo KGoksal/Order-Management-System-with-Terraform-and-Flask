@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/bash 
 # Bash script to set up environment and deploy a Flask application on AWS EC2 instance
 
 # Update system packages
